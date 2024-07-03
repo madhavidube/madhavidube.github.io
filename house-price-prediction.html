@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction using Regression Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Madhavi's Portfolio!</h1>
+        <p>M.Eng. Business Intelligence and Data Analytics</p>
+        <p>Hochschule Emden Leer, Germany</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internships.html">Academics and Internships</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <span>House Price Prediction</span>
+        </div>
+    </header>
+    <main>
+        <section id="project-overview">
+
+    <!-- Centered Image with Flexbox -->
+    <figure style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <img src="HousePrice.png" alt="House Price Prediction" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+
+    </figure>
+             <h2>House Price Prediction using Regression Techniques</h2>
+    <p>In this project, the objective was to predict house prices based on various features using regression techniques. This project was part of the Business Analytics domain. The dataset used for this project was the Ames housing dataset from a Kaggle competition consisting of 79 attributes.</p>
+    <p>This study targets to fetch and preprocess the huge data of housing attributes, compare the best algorithms and select the one with the highest accuracy, train the machine using machine learning algorithms, discover patterns by using the best possible algorithm, and thereby provide high accuracy in the predicted house prices in Ames.</p>
+</section>
+        <section id="domain-knowledge">
+            <h3>Domain Knowledge</h3>
+            <p>Understanding the real estate market and the factors that influence house prices, such as location, size, age, and economic indicators.
+                A house price prediction model seeks to figure out what elements influence price fluctuations in a certain location.
+                Furthermore, in order to extract visual elements for the house pricing model, machine learning algorithms are used.
+
+        </section>
+        <section id="technical-requirements">
+            <h3>Technical Requirements</h3>
+            <p>Tools used: Python, Pandas, Scikit-learn, Jupyter Notebook.</p>
+        </section>
+        <section id="kdd">
+    <h3>Knowledge Discovery in Database (KDD)</h3>
+    <p>The KDD process involves several stages, from data collection to model evaluation. Below is a detailed breakdown of each stage along with an example of the KDD process and data exploration:</p>
+
+    <h4>1) Data Collection</h4>
+    <p>At this stage, raw data is collected in CSV format, which includes various attributes of housing data such as the number of rooms, average area, location, etc. The data used in this work is sourced from Kaggle.com, specifically from a competition organized by that platform. Kaggle is a website hosting various machine learning competitions where participants strive to create the best models. The Ames, Iowa housing dataset, published in 2016, includes attributes on housing in Ames, Iowa, with 79 explanatory variables. [Coc16]</p>
+
+    <h4>2) Data Selection</h4>
+    <p>In this stage, the collected data is reviewed, and mathematical tests are performed to identify columns that need to be removed for further analysis.</p>
+
+    <h4>3) Data Analysis</h4>
+    <p>The most significant aspect of data analysis is to perform Exploratory Data Analysis (EDA). The following steps are taken to analyze the data:</p>
+    <ul>
+        <li><strong>Type of Data:</strong> The dataset can contain multiple data types. </li>
+        <li><strong>Null Value Check:</strong> The info function is used to detect NaN values in the dataset. </li>
+        <li><strong>Data Distribution:</strong> A histogram is created for all numeric variables to analyze the data distribution. </li>
+        <li><strong>Bivariate Analysis:</strong> A bivariate analysis is conducted between the target variable (Sales Price) and other numeric features to study differences based on sales price.</li>
+        <li><strong>Correlation Matrix:</strong> This matrix plots the dependency of the target column on other columns. The value ranges from -1 to 1, with 1 indicating high correlation and -1 indicating low correlation.</li>
+        <li><strong>Gaussian Distribution:</strong> It’s important to check if the data follows a Gaussian distribution as many machine learning algorithms assume this.</li>
+    </ul>
+
+    <h4>4) Data Preparation</h4>
+    <p>The following techniques are implemented to prepare the data for analysis. [STS16]</p>
+    <ul>
+        <li><strong>Outlier Treatment:</strong> Data points outside the range (Q1 - 1.5IQR) and (Q3 + 1.5IQR) are removed. IQR represents Interquartile Range and Q denotes quartile.</li>
+        <li><strong>Null Value Treatment:</strong> Columns with over 90% null values are discarded, while columns with fewer null values are backfilled using the calculated mean and standard deviation.</li>
+        <li><strong>Correlation:</strong> Highly correlated variables are computed and removed. The same number of columns are removed from the test data. Figure 5.6 shows the most correlated attributes.</li>
+    </ul>
+
+    <h4>5) Data Transformation</h4>
+    <p>Data transformation changes the format, structure, or values of the data. The following steps are taken:</p>
+    <ul>
+        <li><strong>Categorical Variable:</strong> Dummy variables are created to convert categorical variables into continuous variables.</li>
+        <li><strong>Normalization:</strong> Data normalization generates uniform data. In this case, log transformation is used. Figure 5.7 depicts log transformation on the dataset.</li>
+    </ul>
+
+    <h4>6) Data Mining</h4>
+    <p>Following algorithms were used for modeling in this project, each with different hyperparameters:</p>
+    <ul>
+
+        <li>Random Forest Regressor Model
+
+        </li>
+        <li>Gradient Boosting Regressor Model
+        </li>
+        <li>XGBoost Model
+
+        </li>
+        <li>LightGBM Model
+
+        </li>
+    </ul>
+
+    <h4>7) Model Evaluation</h4>
+    <p>Model evaluation validates the model’s accuracy using various metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). In this project, MSE is used as a precision metric. Figure 5.8 represents the comparison of all models, where a lower MSE indicates a better model. Figure 5.9 to Figure 5.13 shows the predictions by all five models for the test data.</p>
+</section>
+
+
+
+
+        <section id="development">
+            <h3>Development</h3>
+            <p>Implemented multiple regression techniques such as Linear Regression, Ridge Regression, and Lasso Regression. Evaluated models using metrics like R-squared and Mean Absolute Error.</p>
+        </section>
+        <section id="deployment">
+            <h3>Deployment</h3>
+            <p>Making machine learning models available for end users or systems is known as deployment or putting models into production. However, deploying machine learning models is difficult and complex. To make this process as easy as possible, an interface is needed. Before the deployment of the interface the code for the backend needs to be developed and the models created.
+            The best choice for this project was a python-based web framework, because most programming parts are already taken in python. A well-known framework is flask. Flask is a Python-based web application framework.
+
+                It features a number of modules that eases the construction apps, for a web developer without having to worry about protocol management, thread management and other such concerns.
+</p>
+        </section>
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <p> A system has been created that seeks to deliver a close to accurate prediction of house prices. Gradient Boosting, XGBoost, Lightgbm, Random forest ensemble and standard elasticnet are all used and compared to find the best algorithm to predict the house prices. Among all the experimented algorithms Gradient boosting algorithm is proved to be the best with mean squared error of 0.015. With the given model customers will be satisfied since the model will provide close to precise results and eliminate the danger of buying in the wrong residence
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Madhavi Dube. All rights reserved.</p>
+    </footer>
+</body>
+</html>

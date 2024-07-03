@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhavi Dube's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for the skills section */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .category {
+            margin-bottom: 10px;
+        }
+        .category-title {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 0 0 10px 10px;
+        }
+        .skill {
+            background-color: #2196F3; /* Blue */
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            text-align: center;
+            min-width: 120px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .skill:hover {
+            background-color: #0b7dda; /* Darker blue */
+        }
+        .learn-more {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .learn-more a {
+            display: inline-block;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .learn-more a:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Madhavi Dube</h1>
+        <p>Data Scientist | M.Eng. Business Intelligence and Data Analytics</p>
+        <p>Ph.D. Student at Hochschule Emden Leer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#academics-and-internships">Academics and Internships</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <img src="Dube.jpg" alt="Madhavi Dube" class="profile-img">
+            <div class="bio">
+                <h2>Madhavi Dube</h2>
+                <p class="fade-in">Trained in cognitive psychology and statistics, I have an extensive background working with large and varied datasets and using advanced statistical methods.</p>
+                <p class="fade-in">I recently expanded my skill set to topics including time series analysis and causal inference, and I'm eager to apply these new methods in a challenging and fast-paced environment.</p>
+                <a href="#about-me" class="button">More About Me</a>
+            </div>
+        </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>This is the about me section. Write a brief introduction about yourself here.</p>
+        </section>
+        <section id="academics-and-internships">
+            <h2>Academics and Internships</h2>
+            <div class="academics">
+                <h3>Academics</h3>
+                <div class="degree">
+                    <h4>Masters in Business Intelligence and Data Analytics</h4>
+                    <p><strong>University Name:</strong> Hochschule Emden Leer</p>
+                    <p><strong>Time Period:</strong> March 2022 - February 2024</p>
+                    <h5>Subjects:</h5>
+                    <ul>
+                        <li>Advanced Data Analysis</li>
+                        <li>Machine Learning</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+                <div class="degree">
+                    <h4>Bachelor of Technology in Computer Science</h4>
+                    <p><strong>University Name:</strong> University of XYZ</p>
+                    <p><strong>Time Period:</strong> August 2016 - May 2020</p>
+                    <h5>Subjects:</h5>
+                    <ul>
+                        <li>Computer Networks</li>
+                        <li>Database Management Systems</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="internships">
+                <h3>Internships</h3>
+                <div class="internship">
+                    <h4>Data Science Intern</h4>
+                    <p><strong>Company Name:</strong> ABC Corp</p>
+                    <p><strong>Time Period:</strong> June 2021 - August 2021</p>
+                    <p>Worked on data preprocessing and feature engineering for machine learning models. Implemented various predictive models to analyze business data and improve decision-making processes.</p>
+                </div>
+                <div class="internship">
+                    <h4>Software Engineering Intern</h4>
+                    <p><strong>Company Name:</strong> XYZ Tech</p>
+                    <p><strong>Time Period:</strong> June 2019 - August 2019</p>
+                    <p>Developed and maintained web applications using JavaScript and Python. Collaborated with the development team to implement new features and optimize existing code.</p>
+                </div>
+            </div>
+        </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <!-- Add your work experience details here -->
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>House Price Prediction using Regression Techniques</h3>
+                <p>This project involves predicting house prices using various regression techniques in the Business Analytics domain.</p>
+                <div class="learn-more">
+                    <a href="house-price-prediction.html">Learn More</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Face Mask Detection Using Convolution Neural Network</h3>
+                <p>This project focuses on detecting face masks using Convolution Neural Networks in the Machine Learning domain.</p>
+                <div class="learn-more">
+                    <a href="face-mask-detection.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <p>Skills are an important aspect of a person's career as they define your ability in your domain. In my opinion, with skills and knowledge, socializing is also an important aspect. Throughout my academic career, I have joined a lot of clubs and organizations for improving my self-confidence, public speaking, and networking. Technical as well as non-technical knowledge are important when it comes to thriving in society. Here are a few of my skills and the organizations that I have joined up to now.</p>
+                <div class="learn-more">
+                    <a href="skills_activities.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <!-- Add your contact details here -->
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+Perfect Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhavi Dube's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Madhavi Dube</h1>
+        <p>Data Scientist | M.Eng. Business Intelligence and Data Analytics</p>
+        <p>Ph.D. Student at Hochschule Emden Leer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#academics-and-internships">Academics and Internships</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <img src="Dube.jpg" alt="Madhavi Dube" class="profile-img">
+            <div class="bio">
+                <h2>Madhavi Dube</h2>
+                <p class="fade-in">Trained in cognitive psychology and statistics, I have an extensive background working with large and varied datasets and using advanced statistical methods.</p>
+                <p class="fade-in">I recently expanded my skill set to topics including time series analysis and causal inference, and I'm eager to apply these new methods in a challenging and fast-paced environment.</p>
+                <a href="#about-me" class="button">More About Me</a>
+            </div>
+        </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>This is the about me section. Write a brief introduction about yourself here.</p>
+        </section>
+        <section id="academics-and-internships">
+            <h2>Academics and Internships</h2>
+            <div class="academics">
+                <h3>Academics</h3>
+                <div class="degree">
+                    <h4>Masters in Business Intelligence and Data Analytics</h4>
+                    <p><strong>University Name:</strong> Hochschule Emden Leer</p>
+                    <p><strong>Time Period:</strong> March 2022 - February 2024</p>
+                    <h5>Subjects:</h5>
+                    <ul>
+                        <li>Advanced Data Analysis</li>
+                        <li>Machine Learning</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+                <div class="degree">
+                    <h4>Bachelor of Technology in Computer Science</h4>
+                    <p><strong>University Name:</strong> University of XYZ</p>
+                    <p><strong>Time Period:</strong> August 2016 - May 2020</p>
+                    <h5>Subjects:</h5>
+                    <ul>
+                        <li>Computer Networks</li>
+                        <li>Database Management Systems</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="internships">
+                <h3>Internships</h3>
+                <div class="internship">
+                    <h4>Data Science Intern</h4>
+                    <p><strong>Company Name:</strong> ABC Corp</p>
+                    <p><strong>Time Period:</strong> June 2021 - August 2021</p>
+                    <p>Worked on data preprocessing and feature engineering for machine learning models. Implemented various predictive models to analyze business data and improve decision-making processes.</p>
+                </div>
+                <div class="internship">
+                    <h4>Software Engineering Intern</h4>
+                    <p><strong>Company Name:</strong> XYZ Tech</p>
+                    <p><strong>Time Period:</strong> June 2019 - August 2019</p>
+                    <p>Developed and maintained web applications using JavaScript and Python. Collaborated with the development team to implement new features and optimize existing code.</p>
+                </div>
+            </div>
+        </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <!-- Add your work experience details here -->
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>House Price Prediction using Regression Techniques</h3>
+                    <p>This project involves predicting house prices using various regression techniques in the Business Analytics domain.</p>
+                    <a href="house-price-prediction.html" class="btn-learn-more-regular">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <h3>Face Mask Detection Using Convolution Neural Network</h3>
+                    <p>This project focuses on detecting face masks using Convolution Neural Networks in the Machine Learning domain.</p>
+                    <a href="face-mask-detection.html" class="btn-learn-more-regular">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <p>Skills are an important aspect of a person's career as they define your ability in your domain. In my opinion, with skills and knowledge, socializing is also an important aspect. Throughout my academic career, I have joined a lot of clubs and organizations for improving my self-confidence, public speaking, and networking. Technical as well as non-technical knowledge are important when it comes to thriving in society. Here are a few of my skills and the organizations that I have joined up to now.</p>
+                <div class="learn-more">
+                    <a href="skills_activities.html" class="btn-learn-more-small">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <!-- Add your contact details here -->
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

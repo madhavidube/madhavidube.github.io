@@ -1,0 +1,694 @@
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #dfe6da;
+
+}
+
+header {
+    background: #4a5b3f;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 1 em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.bio {
+    text-align: center;
+}
+
+.bio h2 {
+    margin-bottom: 0.5em;
+}
+
+.bio p {
+    margin-bottom: 1em;
+}
+
+
+
+.academics-section {
+    color: #333;
+    color: black; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.work-experience-grid {
+    background-color: #8ea57f;
+    color: white; /* Text color */
+    padding: 25px; /* Adjust padding as needed */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.academics {
+    margin-top: 20px;
+}
+
+.academics h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.academics p {
+    margin: 5px 0;
+}
+
+.academics h4 {
+    margin-top: 10px;
+    color: #555;
+}
+
+.academics ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.internships {
+    margin-top: 20px;
+}
+
+.internships h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.internships p {
+    margin: 5px 0;
+}
+
+.internships h4 {
+    margin-top: 10px;
+    color: #555;
+}
+
+.learn-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #45a049;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+/* Custom styles for the skills section */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    margin-bottom: 10px;
+}
+
+.category-title {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+}
+
+.skill {
+    background-color: #2196F3; /* Blue */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 120px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.skill:hover {
+    background-color: #4CAF50; /* Darker blue */
+}
+
+.learn-more {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.learn-more a {
+    display: inline-block;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more a:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.skills .btn-learn-more-regular {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Green */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.skills .btn-learn-more-regular:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #cbd5c0; /*Light green shade*/
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project-card .btn-learn-more-regular {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Green */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn-learn-more-regular:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Internships Grid */
+.internships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.internship-card {
+    background-color: #8ea57f;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.internship-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.internship-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.work-experience-card .show-certificate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50   ; /* Green */
+    border-radius: 25px; /* Oval shape */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.project-card .show-certificate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50   ; /* Green */
+    border-radius: 25px; /* Oval shape */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.internship-card .btn-learn-more-regular:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Work Experience Grid */
+.work-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.work-experience-card {
+    background-color: #cbd5c0;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.work-experience-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.work-experience-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.work-experience-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.work-experience-card ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+    /* Modal styles */
+    .pdf-modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .pdf-modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close-btn {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Button styles */
+.button {
+    background-color: #768645;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5a6537;
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #4CAF50;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+/* Add this to your styles.css file */
+
+/* Keyframes for the sliding text animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Initial state of the sliding text */
+.moving-text {
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards; /* Retain the final state of the animation */
+}
+
+/* Class to start the animation */
+.start-animation {
+    animation: slideIn 20s ease-out;
+}
+
+/* Main section with Background Image */
+#home {
+    position: relative;
+    background: url('graduation3.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px; /* Adjust the height as needed */
+    width: 100%;
+    margin-bottom: 0.5cm;
+}
+
+
+
+/* Profile Content */
+.profile-section {
+    text-align: center; /* Center the content */
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 0.5cm; /* Adjust to overlap slightly with the home section */
+}
+
+.bio {
+    margin-top: 20px;
+}
+
+/* Horizontal line to separate sections */
+.section-divider {
+    border: 0;
+    height: 2px; /* Thickness of the line */
+    background: #4CAF50; /* Black color for the line */
+    margin: 0; /* Adjust the margin as needed */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+
+
+
+
+/* Skills section styles */
+#skills {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+.skill {
+    flex: 1 1 200px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.skill:hover {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+.skill {
+    flex: 1 1 calc(33% - 10px);
+    max-width: 10px;
+}
+
+
+
+
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1);
+
+
+
+
+
+
+
+
+
+
+
+/* KDD Section Styles */
+#kdd {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 1000px;
+    text-align: left;
+}
+
+#kdd h3 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#kdd h4 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#kdd p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#kdd ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+#kdd ul li {
+    margin-bottom: 10px;
+}
+
+#kdd ul li strong {
+    color: #1abc9c;
+}
+
+#kdd img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+//* Project Overview Section Styles */
+#project-overview {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the section and add margin */
+    max-width: 1000px; /* Limit the section width */
+    text-align: center; /* Center text */
+}
+
+#project-overview h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#project-overview figure {
+    margin: 0 auto 20px auto; /* Center the figure and add space below */
+    display: inline-block; /* Allow the figure to center */
+
+}
+
+#project-overview img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+}
+
+#project-overview figcaption {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 10px;
+
+}
+
+#project-overview p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+     text-align: center;
+}

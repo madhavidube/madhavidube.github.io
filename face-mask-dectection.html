@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction using Regression Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Madhavi's Portfolio!</h1>
+        <p>M.Eng. Business Intelligence and Data Analytics</p>
+        <p>Hochschule Emden Leer, Germany</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internships.html">Academics and Internships</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <span>Anomaly Detection</span>
+        </div>
+    </header>
+    <main>
+        <section id="project-overview">
+
+    <!-- Centered Image with Flexbox -->
+    <figure style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <img src="process.png" alt="House Price Prediction" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+
+    </figure>
+             <h2>Anomaly Detection in Automotive Claims Insurance Data</h2>
+    <p>The primary objective of this study is to develop a methodology to automate the existing approach of outlier detection at ControlExpert by determining the anomalies in claims insurance data using unsupervised machine learning algorithms such as Isolation Forest algorithm (ISF), Local Outlier Factor (LOF) and One Class Support Vector Machine (OC-SVM). In addition, the objective is also to determine the model performance, by comparing the results generated through the unsupervised models and to find out the best one out of the rest for anomaly detection process.</p>
+</section>
+        <section id="domain-knowledge">
+            <h3>Domain Knowledge</h3>
+            <p>Understanding the real estate market and the factors that influence house prices, such as location, size, age, and economic indicators.
+                A house price prediction model seeks to figure out what elements influence price fluctuations in a certain location.
+                Furthermore, in order to extract visual elements for the house pricing model, machine learning algorithms are used.
+
+        </section>
+        <section id="technical-requirements">
+            <h3>Technical Requirements</h3>
+            <p>Tools used: Python, Pandas, Scikit-learn, Jupyter Notebook.</p>
+        </section>
+        <section id="kdd">
+    <h3>Knowledge Discovery in Database (KDD)</h3>
+    <p>The KDD process involves several stages, from data collection to model evaluation. Below is a detailed breakdown of each stage along with an example of the KDD process and data exploration:</p>
+
+    <h4>1) Database</h4>
+            <p>As a data requirement for anomaly detection the automotive claims insurance database contains all the information related to insurance claims for automotive incidents such as claim id, date, description and damage amount, vehicle information like make, model, year, vehicle identification number, car damage zones such as bumper, fender, wheel, headlights, door. </p>
+            <p>The data representation of CE database holds following types of data:</p>
+            <ul>
+                <li>Vehicle Manufacturer</li>
+                <li>Vehicle Registeration Data</li>
+                <li>Vehicle Type Data</li>
+                <li>Damage Zone</li>
+                <li>Damage Amount</li>
+            </ul>
+
+    <h4>2) Data Selection</h4>
+            <p>This case study selects 10,000 damage claims with 40 explanatory variables using a select query in SQL. Certain variables in the database exist that aren't really needed to run the models and algorithms such as max revision count, first registration date are only necessary to give more detailed information about the claims are ignored. </p>
+        <p>Amongst the total of 77 vehicle manufacturers such as Audi, Ford, Nissan, Mazda in the dataset, only the top two most frequent manufacturers which are Volkswagen and Mercedes Benz are selected for this case study.</p>
+
+    <h4>3) Data Preparation</h4>
+    <p>The most significant aspect of data analysis is to perform Exploratory Data Analysis (EDA). The following steps are taken to analyze the data:</p>
+    <ul>
+        <li>Null value treatment
+        <li>InconsistentDataTreatment
+        <li>Dimensionality Reduction
+        <li>Gaussian Distribution
+    </ul>
+
+    <h4>4) Data Analysis</h4>
+    <p>The following techniques are implemented to prepare the data for analysis. [STS16]</p>
+    <ul>
+        <li>ANOVA Analysis (Analysis of Variance)</li>
+        <li>Univariate Analysis </li>
+        <li>Bivariate Analysis</li>
+        <li>Exploratory Data Analysis (EDA)</li>
+    </ul>
+
+    <h4>5) Data Transformation</h4>
+    <p>Data transformation changes the format, structure, or values of the data. The following steps are taken:</p>
+    <ul>
+        <li><strong>One Hot Encoding:</strong> Dummy variables are created to convert categorical variables into continuous variables.</li>
+        <li><strong>Normalisation:</strong> Data normalization generates uniform data. In this case, log transformation is used. Figure 5.7 depicts log transformation on the dataset.</li>
+    </ul>
+
+    <h4>6) Data Mining</h4>
+    <p>Following algorithms were used for modeling in this project, each with different hyperparameters:</p>
+    <ul>
+
+        <li>Isolation Forest Model Model
+
+        </li>
+        <li>One Class Support Vector Machine Model
+        </li>
+        <li>Local Outlier Factor Model
+
+
+
+        </li>
+    </ul>
+
+    <h4>7) Model Evaluation</h4>
+            <p>Testing unsupervised models involves evaluating their performance using various metrics and techniques, even though there are no explicit labels in the training data. Here's a general approach to test unsupervised models</p>
+            <ul>
+                <li>Silhoutte Score</li>
+                <li>Davies-Bouldin Index (DBI):</li>
+                <li>Calinski-Harabasz Index (CHI)</li>
+            </ul>
+</section>
+
+
+
+
+        <section id="development">
+            <h3>Development</h3>
+            <p>Implemented multiple unsupervised machine learning techniques such as Isolation Forest, One Class SVM and Local Outlier Factor using the KDD Process to detect anomalies.</p>
+        </section>
+        <section id="deployment">
+            <h3>Deployment</h3>
+            <p>The deployment of this project is done using CI/CD Pipeline, Apache Airflow, and Databricks: Combining CI/CD pipelines, Apache Airflow, and Databricks allows for end- to-end automation and management of data pipelines in data-driven organizations. CI/CD pipelines can handle the automation of code deployment, including deploying code changes to Databricks notebooks or scripts stored in version control repositories. Apache Airflow can orchestrate the execution of Databricks jobs along with other data processing tasks, ensuring that data workflows are executed reliably and efficiently
+            </p>
+
+
+
+            </p>
+        </section>
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <p> In summary, Isolation Forest found out to have highest number of valid anomalies and also gave a higher score based on two evaluation metrics DBI index and CHI index. Hence it could be inferred that isolation forest had better clustering quality, cluster validity, and separation across clusters, which are crucial aspects of outlier detection. By examining these scores, we can better understand the algorithms' performance in distinguishing outliers from regular data points.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Madhavi Dube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
